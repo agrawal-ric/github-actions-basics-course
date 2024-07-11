@@ -10,3 +10,9 @@ jobs:
     steps:
       - name: Say hello
         run: echo "Hello World"
+
+    - uses: actions/checkout@v4
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      with:
+        detached: true
